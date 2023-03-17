@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulario</title>
+    <style>
+      body {
+        background-color: white;
+      }
+      form {
+        margin: 50px auto;
+        width: 900px;
+        padding: 20px;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        font-family: Arial, sans-serif;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Estilos para las etiquetas */
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      /* Estilos para los campos de entrada */
+      input,
+      select,
+      textarea {
+        width: 95%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      /* Estilos para el botón de envío */
+      input[type="submit"] {
+        background-color: #008cba;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 10px 20px;
+        font-size: 18px;
+      }
+
+      /* Estilos para el botón de envío cuando se pasa el cursor por encima */
+      input[type="submit"]:hover {
+        background-color: #00688b;
+      }
+
+      /* Estilos para el campo de comentarios */
+      textarea {
+        resize: vertical;
+        height: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 70px;">Formulario</h1>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required /><br /><br />
+
+      <label for="genero">Género favorito:</label>
+      <select id="genero" name="genero">
+        <option value="rock-and-roll">Rock and Roll</option>
+        <option value="heavy-metal">Heavy Metal</option>
+        <option value="punk-rock">Punk Rock</option>
+        <option value="grunge">Grunge</option>
+        <option value="indie-rock">Indie Rock</option></select
+      ><br /><br />
+
+      <label for="banda">Banda favorita:</label>
+      <input type="text" id="banda" name="banda" required /><br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="comentarios">Comentarios:</label><br />
+      <textarea
+        id="comentarios"
+        name="comentarios"
+        rows="5"
+        cols="50"
+      ></textarea
+      ><br /><br />
+
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>
